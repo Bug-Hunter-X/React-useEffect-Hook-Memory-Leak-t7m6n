@@ -1,0 +1,2 @@
+# React useEffect Hook Memory Leak
+This repository demonstrates a common memory leak in React applications caused by forgetting to include a cleanup function in the `useEffect` hook.  The `bug.js` file shows the faulty code, while `bugSolution.js` provides the corrected version.  The leak occurs because the `setTimeout` is not cancelled when the component unmounts, leading to unnecessary function calls and memory retention.
